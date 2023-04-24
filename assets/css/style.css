@@ -1,0 +1,148 @@
+:root {
+    --red: #ef233c;
+    --darkred: #c00424;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --dark: #13141d;
+    --white: #fff;
+    --thumb: #edf2f4;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#card-containter{
+    margin: 15px;
+}
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--black);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card:hover {
+    color: var(--white);
+    background: var(--red);
+}
+
+.card .card-title {
+    font-size: 20px;
+    color: #fff;
+}
+
+.card .card-content {
+    height: 200px;
+}
+.card .model-view {
+    height: 100%;
+    width: 100%;
+
+}
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+.card {
+    flex-basis: calc(15% - 15px);
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
+}
+
+header{
+    margin: 0;
+    padding: 5px;
+    background-image: linear-gradient(to right, #261360, #000);   
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+header h2{
+    margin: 0%;
+    font-weight: bold;
+    color: white;
+}
+h2{
+    margin: 0%;
+    font-weight: bold;
+    color: white;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--black);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+    margin: 2%;
+}
+.content{
+    width: 20%;
+    background: var(--dark);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    transition: all 0.2s;
+}
+.content #main-model{
+    height: 100%;
+    width: 100%;
+}
+.info-content{
+    width: 20%;
+
+    background: var(--dark);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    transition: all 0.2s;
+}
