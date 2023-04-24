@@ -1,0 +1,118 @@
+/* General CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --dark-purple-color: #070724;
+    --light-purple-color: #8854C0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --grey-color: #f2f2f2;
+    --transition: all 300ms ease-in-out;
+}
+
+body {
+    background-color: var(--dark-purple-color);
+    overflow: hidden;
+    background-image: url(../assets/img/Stars.png);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 50px;
+}
+
+.title {
+    color: var(--grey-color);
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 75px;
+    padding: 30px 0 5px 100px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-planets {
+    padding-top: 20px;
+    padding-left: 200px;
+    z-index: 10;
+}
+
+a {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey-color);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+a:hover{
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-planets {
+    color: var(--light-color);
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 300;
+    display: flex;
+    position: relative;
+    transform: translate(-300px, -400px);
+}
+
+.info-planets {
+    color: var(--light-color);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    position: relative;
+    transform: translate(60px, -200px);
+}
+
+.planet-img {
+    max-width: 65%;
+    height: auto;
+    display: flex;
+    position: relative;
+    transform: translate(20px, -200px);
+}
+
+.solar-system-img {
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    position: relative;
+    transform: translate(-320px, -270px);
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+    cursor: pointer;
+    font-family: Poppins;
+    text-align: center;
+    color: var(--light-color);
+    background-color: var(--light-purple-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    transform: translate(1620px, 30px);
+}
