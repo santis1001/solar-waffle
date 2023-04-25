@@ -11,41 +11,50 @@
 <body>
     <header>
             <div class="header">
-                <h1 class="title">Solar-Waffle</h1>
+                <a href="./index.html">                    
+                    <div class="title-container">
+                        <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                        <h1 class="planet-title">Solar-Waffle</h1>
+                    </div>
+                </a>
                 <nav class="nav-planets">
-                    <a href="#">Mercury</a>
-                    <a href="#">Venus</a>
-                    <a href="#">Earth</a>
-                    <a href="#">Mars</a>
-                    <a href="#">Jupiter</a>
-                    <a href="#">Saturn</a>
-                    <a href="#">Uranus</a>
-                    <a href="#">Neptune</a>
+                    <a href="./planet.html?planet=Mercury">Mercury</a>
+                    <a href="./planet.html?planet=Venus">Venus</a>
+                    <a href="./planet.html?planet=Earth">Earth</a>
+                    <a href="./planet.html?planet=Mars">Mars</a>
+                    <a href="./planet.html?planet=Jupiter">Jupiter</a>
+                    <a href="./planet.html?planet=Saturn">Saturn</a>
+                    <a href="./planet.html?planet=Uranus">Uranus</a>
+                    <a href="./planet.html?planet=Neptune">Neptune</a>
                 </nav>
             </div>
     </header>
 
     <main class="main">
         <div class="container">
-            <h2 class="title-planets">Earth</h2>
-            <p class="info-planets">
-                "name": "Earth",
-                "mass": 0.00315,
-                "radius": 0.0892,
-                "period": 365.2,
-                "semi_major_axis": 1,
-                "temperature": 288,
-                "distance_light_year": 0,
-                "host_star_mass": 1,
-                "host_star_temperature": 6000
-            </p>
             <img class="planet-img" src="assets/img/Cartoon Planet Earth with Clouds.H07.2k.png">
-            <div class="buttons">
-                <button>Prev Planet</button>
-                <button>More Info</button>
-                <button>Next Planet</button>
+            <div class="infocard">
+                <h2 id="planet" class="title-planets">Earth</h2>
+                <p class="info-planets">
+                    "name": "Earth",                    
+                    "mass": 0.00315,
+                    "radius": 0.0892,
+                    "period": 365.2,
+                    "semi_major_axis": 1,
+                    "temperature": 288,
+                    "distance_light_year": 0,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                </p>
+                <div class="buttons">
+                    <button id="prev">Prev Planet</button>
+                    <button id="info">More Info</button>
+                    <button id="next">Next Planet</button>
+                </div>
             </div>
+            
         </div>
     </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

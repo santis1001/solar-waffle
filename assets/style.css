@@ -26,7 +26,16 @@ body {
     padding-top: 15px;
     padding-right: 50px;
 }
-
+.title-container{
+    display: flex;
+    flex-direction: row;   
+    height: fit-content; 
+    align-items: center;
+    margin-left:30px;
+}
+.icon-system{
+    height: 115px;
+}
 .title {
     color: var(--grey-color);
     font-family: Poppins;
@@ -36,7 +45,14 @@ body {
     cursor: pointer;
     z-index: 10;
 }
-
+.planet-title {
+    color: var(--grey-color);
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 75px;
+    cursor: pointer;
+    z-index: 10;
+}
 .nav-planets {
     padding-top: 20px;
     padding-left: 200px;
@@ -58,19 +74,23 @@ a:hover{
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
+.infocard{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
 .title-planets {
     color: var(--light-color);
     font-family: Poppins;
     font-size: 60px;
     font-weight: 300;
     display: flex;
-    position: relative;
-    transform: translate(-300px, -400px);
+
 }
 
 .info-planets {
@@ -80,15 +100,12 @@ a:hover{
     font-weight: 300;
     display: flex;
     position: relative;
-    transform: translate(60px, -200px);
 }
 
 .planet-img {
-    max-width: 65%;
+    max-width: 50%;
     height: auto;
     display: flex;
-    position: relative;
-    transform: translate(20px, -200px);
 }
 
 .solar-system-img {
@@ -110,9 +127,29 @@ button {
 }
 
 .buttons {
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: auto;
-    transform: translate(1620px, 30px);
+        
+}
+.container-404{
+    display: flex;
+    flex-direction: column;
+    flex: content;
+    margin: 5% 15%;
+    justify-items: center;
+    align-items: center;
+}
+.container-404 h2{
+    width: fit-content;
+    color: var(--light-color);
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 300; 
+
+}
+.container-404 img{
+    height: 70%;
+    width: 70%;
 }
