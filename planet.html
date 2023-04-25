@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style_planet.css">
     <title>Solar-Waffle</title>
 </head>
 <body>
     <header>
             <div class="header">
-                <a href="./index.html">                    
-                    <div class="title-container">
-                        <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
-                        <h1 class="planet-title">Solar-Waffle</h1>
-                    </div>
+                <a class="nav-title" href="./index.html">                    
+                    <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                    <h1 class="title">Solar-Waffle</h1>
                 </a>
                 <nav class="nav-planets">
                     <a href="./planet.html?planet=Mercury">Mercury</a>
@@ -31,9 +30,11 @@
     </header>
 
     <main class="main">
-        <div class="container">
-            <img class="planet-img" src="assets/img/Cartoon Planet Earth with Clouds.H07.2k.png">
-            <div class="infocard">
+        <div id="container" class="container">
+            <div class="modelcontent">                
+                <model-viewer id="model" src="" orientation="0 0 0"></model-viewer>             
+            </div>
+            <div id="infocard" class="infocard">
                 <h2 id="planet" class="title-planets">Earth</h2>
                 <p class="info-planets">
                     "name": "Earth",                    
