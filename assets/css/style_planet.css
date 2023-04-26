@@ -106,14 +106,31 @@ a:hover{
     display: flex;
 }
 .info-planets {
-    color: var(--light-color);
+    color: var(--light-color);    
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
     font-family: Poppins;
     font-size: 30px;
-    font-weight: 300;
-    display: flex;
-    position: relative;
-}
+    font-weight: 300;   
+    align-content: center; 
+    padding-bottom: 10px;
 
+}
+.sup{
+    display: inline;
+    height: 22px;
+    font-size: 22px;
+}
+.line p{
+    height: 40px;
+}
+.bold{
+    font-weight: bold;
+    padding-right: 10px;
+}
 button {
     width: 30%;
     cursor: pointer;

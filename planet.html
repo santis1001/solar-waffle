@@ -38,17 +38,15 @@
             </div>
             <div id="infocard" class="infocard">
                 <h2 id="planet" class="title-planets">Earth</h2>
-                <p class="info-planets">
-                    "name": "Earth",                    
-                    "mass": 0.00315,
-                    "radius": 0.0892,
-                    "period": 365.2,
-                    "semi_major_axis": 1,
-                    "temperature": 288,
-                    "distance_light_year": 0,
-                    "host_star_mass": 1,
-                    "host_star_temperature": 6000
-                </p>
+                <div class="info-planets">
+                    <div class="line"><p class="bold"> Name: </p><p id="name"></p></div>                    
+                    <div class="line"><p class="bold">Mass: </p><p id="mass"></p><p>x10<p id="superscript" class="sup"></p>kg</p></div>                    
+                    <div class="line"><p class="bold">Radius: </p><p id="radius"></p><p>km</p></div>      
+                    <div class="line"><p class="bold">Period: </p><p id="period"></p><p>&nbsp;Earth days</p></div>                                  
+                    <div class="line"><p class="bold">Semi Major Axis: </p><p id="semi_major_axis"></p><p>AU</p></div>                    
+                    <div class="line"><p class="bold">Temperature: </p><p id="temperature"></p><p>°C</p></div>                    
+                    <div class="line"><p class="bold">Distance: </p><p id="distance_light_year"></p><p>ly</p></div>                    
+                </div>
                 <div class="buttons">
                     <button id="prev">Prev Planet</button>
                     <button id="info">More Info</button>
