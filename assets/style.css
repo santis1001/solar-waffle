@@ -116,3 +116,38 @@ button {
     width: auto;
     transform: translate(1620px, 30px);
 }
+
+.error404 {
+    max-width: 40%;
+    height: auto;
+    display: flex;
+    position: relative;
+    transform: translate(600px, 100px);
+}
+
+.errormessage {
+    color: #f2f2f2;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    transform: translate(20px, 350px);
+    z-index: 2;
+}
+
+.emptymessage {
+    color: #f2f2f2;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+    display: flex;
+    text-align: center;
+    position: relative;
+    transform: translate(-620px, -150px);
+    z-index: 2;
+}
