@@ -58,6 +58,7 @@ a:hover{
 
 .container {
     display: flex;
+    width: auto;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
@@ -118,23 +119,22 @@ button {
 }
 
 .error404 {
-    max-width: 40%;
+    max-width: 70%;
     height: auto;
     display: flex;
     position: relative;
-    transform: translate(600px, 100px);
+    transform: translate(215px, 10px);
 }
 
 .errormessage {
     color: #f2f2f2;
     font-family: Poppins;
     font-weight: 600;
-    font-size: 100px;
-    width: auto;
-    height: auto;
-    display: flex;
+    font-size: 50px;
+    display: block;
+    justify-content: flex-end;
     position: relative;
-    transform: translate(20px, 350px);
+    transform: translate(-350px, 250px);
     z-index: 2;
 }
 
@@ -142,11 +142,11 @@ button {
     color: #f2f2f2;
     font-family: Poppins;
     font-weight: 600;
-    font-size: 100px;
+    font-size: 70px;
     width: auto;
-    height: auto;
-    display: flex;
+    display: inline;
     text-align: center;
+    justify-content: center;
     position: relative;
     transform: translate(-620px, -150px);
     z-index: 2;
