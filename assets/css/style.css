@@ -73,3 +73,13 @@ a:hover{
     width: 50%;
 
 }
+footer div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+#aboutus{
+    position: relative;
+    right: 0%;
+    margin-right: 30px;
+}
