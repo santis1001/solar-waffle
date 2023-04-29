@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style_planet.css">
+    <title>Solar-Waffle</title>
+    <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
+
+</head>
+<body>
+    <header>
+            <div class="header">
+                <a class="nav-title" href="./">                    
+                    <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                    <h1 class="title">Solar-Waffle</h1>
+                </a>
+                <nav class="nav-planets">
+                    <a href="./planet.html?planet=Mercury">Mercury</a>
+                    <a href="./planet.html?planet=Venus">Venus</a>
+                    <a href="./planet.html?planet=Earth">Earth</a>
+                    <a href="./planet.html?planet=Mars">Mars</a>
+                    <a href="./planet.html?planet=Jupiter">Jupiter</a>
+                    <a href="./planet.html?planet=Saturn">Saturn</a>
+                    <a href="./planet.html?planet=Uranus">Uranus</a>
+                    <a href="./planet.html?planet=Neptune">Neptune</a>
+                </nav>
+            </div>
+    </header>
+
+    <main class="main">
+        <div id="container" class="container">
+            <div class="modelcontent">                
+                <model-viewer id="model" src="" orientation="0 0 0"></model-viewer>             
+            </div>
+            <div id="infocard" class="infocard">
+                <h2 id="planet" class="title-planets">Earth</h2>
+                <div class="info-planets">
+                    <div class="line"><p class="bold"> Name: </p><p id="name"></p></div>                    
+                    <div class="line"><p class="bold">Mass: </p><p id="mass"></p><p>x10<p id="superscript" class="sup"></p>kg</p></div>                    
+                    <div class="line"><p class="bold">Radius: </p><p id="radius"></p><p>km</p></div>      
+                    <div class="line"><p class="bold">Period: </p><p id="period"></p><p>&nbsp;Earth days</p></div>                                  
+                    <div class="line"><p class="bold">Semi Major Axis: </p><p id="semi_major_axis"></p><p>AU</p></div>                    
+                    <div class="line"><p class="bold">Temperature: </p><p id="temperature"></p><p>°C</p></div>                    
+                    <div class="line"><p class="bold">Distance: </p><p id="distance_light_year"></p><p>ly</p></div>                    
+                </div>
+                <div class="buttons">
+                    <button id="prev">Prev Planet</button>
+                    <button id="info">More Info</button>
+                    <button id="next">Next Planet</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

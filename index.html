@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
+    <title>Solar-Waffle</title>
+</head>
+<body>
+    <header>
+            <div class="header">
+                <h1 class="title">Solar-Waffle</h1>
+                <nav class="nav-planets">
+                    <a id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                    <a id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                    <a id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                    <a id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                    <a id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                    <a id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                    <a id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                    <a id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                </nav>
+            </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <img class="solar-system-img" src="assets/img/Cartoon Solar System.B04.2k.png">
+            <div id="modelcontent" class="modelcontent">
+                <model-viewer id="model" src="./assets/models/mars/mars.gltf" orientation="0 0 0">
+                </model-viewer> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a id="aboutus" href="./aboutus.html?prs=santiago">About Us</a>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

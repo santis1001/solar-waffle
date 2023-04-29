@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="myname">Nombre</title>
+    <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/aboutus.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a class="nav-title" href="./">                    
+                <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                <h1 class="title">Solar-Waffle</h1>
+            </a>
+            <nav class="nav-planets">
+                <a href="./planet.html?planet=Mercury">Mercury</a>
+                <a href="./planet.html?planet=Venus">Venus</a>
+                <a href="./planet.html?planet=Earth">Earth</a>
+                <a href="./planet.html?planet=Mars">Mars</a>
+                <a href="./planet.html?planet=Jupiter">Jupiter</a>
+                <a href="./planet.html?planet=Saturn">Saturn</a>
+                <a href="./planet.html?planet=Uranus">Uranus</a>
+                <a href="./planet.html?planet=Neptune">Neptune</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div id="container" class="container">
+            <div id="modelcontent" class="modelcontent">                
+                <model-viewer id="model" src="./assets/models/santiago.gltf" orientation="0 0 0"></model-viewer>             
+            </div>
+            <div id="credits" class="credits">
+                <h2 id="Name" class="title-name">Earth</h2>
+                <div id="info-credit" class="info-credit">
+                    <div class="line"><p class="bold"> Name: </p></p></div>                             
+                </div>                
+                <div class="title-cont" >
+                    <a id="git" class="git" href="">
+                        <img src="./assets/img/git.png" alt="">
+                    </a>
+                </div>
+                <div class="buttons">
+                    <button id="Santiago">Santiago</button>
+                    <button id="Eduardo">Eduardo</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="./assets/js/ourinfo.js"></script>
+</body>
+</html>

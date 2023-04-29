@@ -1,0 +1,34 @@
+[
+    {   "name":"Mercury",
+        "obj":"",        
+        "url":"./planet.html?planet=Mercury"
+    },
+    {   "name":"Venus",
+        "obj":"./assets/models/venus/venus.gltf",        
+        "url":"./planet.html?planet=Venus"
+    },
+    {   "name":"Earth",
+        "obj":"./assets/models/earth/earth.gltf",        
+        "url":"./planet.html?planet=Earth"
+    },
+    {   "name":"Mars",
+        "obj":"./assets/models/mars/mars.gltf",        
+        "url":"./planet.html?planet=Mars"
+    },
+    {   "name":"Jupiter",
+    "obj":"",        
+    "url":"./planet.html?planet=Jupiter"
+    },
+    {   "name":"Saturn",
+        "obj":"",        
+        "url":"./planet.html?planet=Saturn"
+    },
+    {   "name":"Uranus",
+        "obj":"",        
+        "url":"./planet.html?planet=Uranus"
+    },
+    {   "name":"Neptune",
+        "obj":"./assets/models/neptune/neptune.gltf",        
+        "url":"./planet.html?planet=Neptune"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Santiago Valenzuela",
+        "short":"santiago",
+        "roll": "Backend Developer",
+        "description":[
+            "Developed the backend of the web app using appropriate programming languages and tools.",
+            "Tested and debugged the backend and API thoroughly to identify and fix any issues or bugs.",
+            "Integrated the API with the frontend of the web app to provide the user with visual representation of the planets.",
+            "Ensured the functionality of the backend and API implementaton.",
+            "Created a well-organized project structure with clear separation of concerns to make the codebase maintainable and extensible."
+        ],
+        "obj":"./assets/models/santiago.gltf",
+        "git":"https://github.com/santis1001"
+    },
+    {
+        "name":"Eduardo Pineda",
+        "short":"eduardo",
+        "roll": "Frontend Developer, Graphic Designer",
+        "description":[
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "obj":"./assets/models/.gltf",
+        "git":"https://github.com/"
+    }
+]

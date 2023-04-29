@@ -1,0 +1,149 @@
+/* General CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --dark-purple-color: #070724;
+    --light-purple-color: #8854C0;
+    --light-blue-color: #5468c0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --grey-color: #f2f2f2;
+    --transition: all 300ms ease-in-out;
+}
+body {
+    background-color: var(--dark-purple-color);
+    overflow: hidden;
+    background-image: url(./Stars.png);
+}
+main{
+    height: 1500px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 50px;
+} 
+
+.nav-planets {
+    padding-top: 20px;
+    padding-left: 200px;
+    z-index: 10;
+}
+
+a {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey-color);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+a:hover{
+    font-weight: 600;
+}
+.nav-title{
+    height: 100px;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6%;
+}
+.icon-system{
+    width: 100;    
+    height: 100%;
+}
+
+.title {
+    color: var(--grey-color);
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 75px;
+    cursor: pointer;
+    padding-left: 3%;
+    z-index: 10;
+}
+.container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.modelcontent{
+    margin-top: 0;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+}
+#model{
+    height: 100%;
+    width: 50%;
+}
+.infocard{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10% 5%;    
+}
+.title-planets {
+    color: var(--light-color);
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 300;
+    display: flex;
+}
+.info-planets {
+    color: var(--light-color);    
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;   
+    align-content: center; 
+    padding-bottom: 10px;
+
+}
+.sup{
+    display: inline;
+    height: 22px;
+    font-size: 22px;
+}
+.line p{
+    height: 40px;
+}
+.bold{
+    font-weight: bold;
+    padding-right: 10px;
+}
+button {
+    width: 30%;
+    cursor: pointer;
+    font-family: Poppins;
+    text-align: center;
+    color: var(--light-color);
+    background-color: var(--light-purple-color);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+}
