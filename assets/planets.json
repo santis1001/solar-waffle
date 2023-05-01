@@ -1,6 +1,6 @@
 [
     {   "name":"Mercury",
-        "obj":"",        
+        "obj":"./assets/models/mercury/mercury.gltf",        
         "url":"./planet.html?planet=Mercury"
     },
     {   "name":"Venus",
@@ -16,15 +16,15 @@
         "url":"./planet.html?planet=Mars"
     },
     {   "name":"Jupiter",
-    "obj":"",        
-    "url":"./planet.html?planet=Jupiter"
+        "obj":"./assets/models/jupiter/jupiter.gltf",        
+        "url":"./planet.html?planet=Jupiter"
     },
     {   "name":"Saturn",
-        "obj":"",        
+        "obj":"./assets/models/saturn/saturn.gltf",        
         "url":"./planet.html?planet=Saturn"
     },
     {   "name":"Uranus",
-        "obj":"",        
+        "obj":"./assets/models/uranus/uranus.gltf",        
         "url":"./planet.html?planet=Uranus"
     },
     {   "name":"Neptune",
