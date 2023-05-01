@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style_tailwind.css">
+    <title>Solar Waffle</title>
+</head>
+<body>
+    <header>
+        <div class="container min-h-screen relative">
+            <nav class="nav-planets flex items-center">
+                <h1 class="title text-6xl text-slate-50 font-semibold px-20 pt-10">Solar-Waffle</h1>
+                <ul class="flex-1 text-right">
+                    <li class="list-none inline-block px-2 pt-10 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+</header>
+
+<main class="main">
+    <div class="mt-10 z-0">
+        <img class="solar-system-img w-auto xl:absolute top-5 -translate-x-64 scale-90 z-0" src="assets/img/solar system.gif">
+        <div id="modelcontent" class="modelcontent">
+            <model-viewer id="model" src="./assets/models/mars/mars.gltf" orientation="0 0 0">
+            </model-viewer> 
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <a id="aboutus" href="./aboutus.html?prs=santiago">About Us</a>
+    </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
