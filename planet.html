@@ -5,57 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style_planet.css">
+    <link rel="stylesheet" href="assets/css/style_tailwind.css">
     <title>Solar-Waffle</title>
     <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
 
 </head>
 <body>
     <header>
-            <div class="header">
-                <a class="nav-title" href="./">                    
-                    <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
-                    <h1 class="title">Solar-Waffle</h1>
+        <div class="relative min-w-full">
+            <nav class="nav-planets flex items-center">
+                <a class="flex items-center pl-20 pt-5" href="./">                    
+                    <img class="h-24 w-24" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                    <h1 class="text-6xl text-slate-50 font-semibold pr-20">Solar-Waffle</h1>
                 </a>
-                <nav class="nav-planets">
-                    <a href="./planet.html?planet=Mercury">Mercury</a>
-                    <a href="./planet.html?planet=Venus">Venus</a>
-                    <a href="./planet.html?planet=Earth">Earth</a>
-                    <a href="./planet.html?planet=Mars">Mars</a>
-                    <a href="./planet.html?planet=Jupiter">Jupiter</a>
-                    <a href="./planet.html?planet=Saturn">Saturn</a>
-                    <a href="./planet.html?planet=Uranus">Uranus</a>
-                    <a href="./planet.html?planet=Neptune">Neptune</a>
-                </nav>
-            </div>
+                <ul class="flex-1 text-right">
+                    <li class="list-none inline-block px-2 pt-10 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <div id="container" class="container">
-            <div class="modelcontent">                
-                <model-viewer id="model" src="" orientation="0 0 0"></model-viewer>             
+        <div id="container" class="mt-10 z-0 flex flex-row h-full">
+            <div class="modelcontent h-full w-3/6 grid justify-items-center flex items-center">                
+                <model-viewer id="model" src="./assets/models/mars/mars.gltf" orientation="0 0 0"></model-viewer>             
             </div>
-            <div id="infocard" class="infocard">
-                <h2 id="planet" class="title-planets">Earth</h2>
-                <div class="info-planets">
-                    <div class="line"><p class="bold"> Name: </p><p id="name"></p></div>                    
-                    <div class="line"><p class="bold">Mass: </p><p id="mass"></p><p>x10<p id="superscript" class="sup"></p>kg</p></div>                    
-                    <div class="line"><p class="bold">Radius: </p><p id="radius"></p><p>km</p></div>      
-                    <div class="line"><p class="bold">Period: </p><p id="period"></p><p>&nbsp;Earth days</p></div>                                  
-                    <div class="line"><p class="bold">Semi Major Axis: </p><p id="semi_major_axis"></p><p>AU</p></div>                    
-                    <div class="line"><p class="bold">Temperature: </p><p id="temperature"></p><p>°C</p></div>                    
-                    <div class="line"><p class="bold">Distance: </p><p id="distance_light_year"></p><p>ly</p></div>                    
-                </div>
-                <div class="buttons">
-                    <button id="prev">Prev Planet</button>
-                    <button id="info">More Info</button>
-                    <button id="next">Next Planet</button>
-                </div>
+            <div id="infocont" class="h-full w-3/6 grid justify-items-center flex items-center">
+                <div id="infocard" class=" text-slate-50 w-3/6">
+                    <h2 id="planet" class="text-6xl	p-20 w-fit	justify-self-center ">Earth</h2>
+                    <div class="info-planets text-3xl	">
+                        <div class="flex flex-row"><p class="font-bold pr-2.5"> Name: </p><p id="name"></p></div>                    
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Mass: </p><p id="mass"></p><p>x10<p id="superscript" class="sup"></p>kg</p></div>                    
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Radius: </p><p id="radius"></p><p>km</p></div>      
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Period: </p><p id="period"></p><p>&nbsp;Earth days</p></div>                                  
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Semi Major Axis: </p><p id="semi_major_axis"></p><p>AU</p></div>                    
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Temperature: </p><p id="temperature"></p><p>°C</p></div>                    
+                        <div class="flex flex-row"><p class="font-bold pr-2.5">Distance: </p><p id="distance_light_year"></p><p>ly</p></div>                    
+                    </div>
+                    <div class="buttons p-20 flex justify-between">
+                        <button id="prev" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Prev Planet</button>
+                        <button id="next" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Next Planet</button>
+                    </div>
+                </div>                
             </div>
-            
         </div>
     </main>
+    <footer class="absolute bottom-0 right-0 m-5">
+        <div>
+            <a id="aboutus" class="text-xl text-slate-50 font-normal hover:font-medium px-2" href="./aboutus.html?prs=santiago">About Us</a>
+        </div>
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

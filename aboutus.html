@@ -7,46 +7,58 @@
     <title id="myname">Nombre</title>
     <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/aboutus.css">
+    <link rel="stylesheet" href="assets/css/style_tailwind.css">
 </head>
 <body>
     <header>
-        <div class="header">
-            <a class="nav-title" href="./">                    
-                <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
-                <h1 class="title">Solar-Waffle</h1>
-            </a>
-            <nav class="nav-planets">
-                <a href="./planet.html?planet=Mercury">Mercury</a>
-                <a href="./planet.html?planet=Venus">Venus</a>
-                <a href="./planet.html?planet=Earth">Earth</a>
-                <a href="./planet.html?planet=Mars">Mars</a>
-                <a href="./planet.html?planet=Jupiter">Jupiter</a>
-                <a href="./planet.html?planet=Saturn">Saturn</a>
-                <a href="./planet.html?planet=Uranus">Uranus</a>
-                <a href="./planet.html?planet=Neptune">Neptune</a>
+        <div class="container relative min-w-full">
+            <nav class="nav-planets flex items-center">
+                <a class="flex items-center pl-20 pt-5" href="./">                    
+                    <img class="h-24 w-24" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                    <h1 class="text-6xl text-slate-50 font-semibold pr-20">Solar-Waffle</h1>
+                </a>
+                <ul class="flex-1 text-right">
+                    <li class="list-none inline-block px-2 pt-10 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
-    <main class="main">
-        <div id="container" class="container">
-            <div id="modelcontent" class="modelcontent">                
-                <model-viewer id="model" src="./assets/models/santiago.gltf" orientation="0 0 0"></model-viewer>             
+
+    <main id="ourmain">
+        <div id="container" class="mt-10 z-0 flex flex-row h-full">
+            <div id="modelcontent" class="modelcontent h-full w-3/6 grid justify-items-center flex items-center">                
+                <model-viewer id="ourmodel" src="./assets/models/santiago.gltf" orientation="0 0 0"></model-viewer>             
             </div>
-            <div id="credits" class="credits">
-                <h2 id="Name" class="title-name">Earth</h2>
-                <div id="info-credit" class="info-credit">
-                    <div class="line"><p class="bold"> Name: </p></p></div>                             
+            <div id="credits" class="text-slate-50 h-2/3 w-3/6 grid justify-items-center flex items-center">
+                <h2 id="Name" class="text-6xl	px-20 w-fit	justify-self-center">Earth</h2>
+                <div id="info-credit" class="info-credit px-20 text-3xl">
+                    <div class="flex flex-row"><p class="font-bold"> Name: </p></div>                             
                 </div>                
                 <div class="title-cont" >
                     <a id="git" class="git" href="">
-                        <img src="./assets/img/git.png" alt="">
+                        <img class="w-16 invert" src="./assets/img/git.png" alt="">
                     </a>
                 </div>
-                <div class="buttons">
-                    <button id="Santiago">Santiago</button>
-                    <button id="Eduardo">Eduardo</button>
+                <div class="buttons px-20 w-3/6 flex justify-between">
+                    <button id="Santiago" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Santiago</button>
+                    <button id="Eduardo" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Eduardo</button>
                 </div>
             </div>
             

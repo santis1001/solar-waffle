@@ -14,7 +14,21 @@ body {
     overflow: hidden;
     background-image: url(./Stars.png);
 }
-
+main{
+    height: 1000px;
+}
 * {
     font-family: Poppins;
+}
+.modelcontent model-viewer{
+    height: 50%;
+    width: 50%;
+}
+
+#ourmodel{
+    height: 100%;
+    width: 100%;
+}
+#ourmain{
+    height: 1300px;
 }

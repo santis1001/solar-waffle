@@ -6,6 +6,7 @@ var doc_title = document.getElementById('planet');
 doc_title.textContent = planet;
 var doc_container = document.getElementById('container');
 var doc_model = document.getElementById('model');
+var doc_infocont = document.getElementById('infocont');
 var doc_info = document.getElementById('infocard');
 
 var doc_previous = document.getElementById('prev');
@@ -66,7 +67,7 @@ function main(){
         doc_container.innerHTML = '';
         
         var doc_modelCont = document.createElement('div');
-        doc_modelCont.setAttribute('class','modelcontent');
+        doc_modelCont.setAttribute('class','modelcontent h-full w-3/6 grid justify-items-center flex items-center');
 
         doc_model = document.createElement('model-viewer');
         doc_model.setAttribute('id','model')
@@ -79,7 +80,7 @@ function main(){
         doc_modelCont.appendChild(doc_model);
 
         doc_container.appendChild(doc_modelCont);
-        doc_container.appendChild(doc_info);
+        doc_container.appendChild(doc_infocont);
 
         console.log(this_planet);
         rotation();
@@ -89,7 +90,7 @@ function main(){
     }
     
     if(index==0){
-        doc_previous.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_previous.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_previous.setAttribute('disabled','')
         doc_next.addEventListener("click", function() {
             window.location.href = planets[index+1].url;
@@ -99,7 +100,7 @@ function main(){
         doc_previous.addEventListener("click", function() {
             window.location.href = planets[index-1].url;
         });
-        doc_next.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_next.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_next.setAttribute('disabled', '')
     }else{
         doc_previous.addEventListener("click", function() {

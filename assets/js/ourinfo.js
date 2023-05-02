@@ -6,7 +6,7 @@ var doc_title = document.getElementById('myname');
 
 var doc_modelCont = document.getElementById('modelcontent');
 var doc_info = document.getElementById('info-credit');
-var doc_model = document.getElementById('model');
+var doc_model = document.getElementById('ourmodel');
 var d_name = document.getElementById('Name');
 var d_git = document.getElementById('git');
 
@@ -31,10 +31,10 @@ function main(){
         doc_title.textContent = ''+thisinfo.name;
 
         doc_modelCont.innerHTML = '';
-        doc_modelCont.setAttribute('class','modelcontent');
+        doc_modelCont.setAttribute('class','modelcontent h-full w-3/6 grid justify-items-center flex items-center');
         
         doc_model = document.createElement('model-viewer');
-        doc_model.setAttribute('id','model')
+        doc_model.setAttribute('id','ourmodel')
         doc_model.setAttribute('src',''+thisinfo.obj);
         
         doc_modelCont.appendChild(doc_model);
@@ -46,10 +46,10 @@ function main(){
         doc_info.innerHTML = '';
         
         var createDiv = document.createElement('div');
-        createDiv.setAttribute('class','line');
+        createDiv.setAttribute('class','flex flex-row');
         
         var roll = document.createElement('p');
-        roll.setAttribute('class','bold');
+        roll.setAttribute('class','font-bold');
         roll.textContent = thisinfo.roll;
         
         createDiv.appendChild(roll);
@@ -58,7 +58,7 @@ function main(){
         console.log(thisinfo.description);
         for(var i=0;i<desc.length;i++){
             var createP = document.createElement('p');
-            createP.setAttribute('class','line');
+            createP.setAttribute('class','flex flex-row');
             createP.textContent = desc[i];
             
             doc_info.appendChild(createP);
@@ -70,7 +70,7 @@ function main(){
     }
     
     if(index==0){
-        doc_sant.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_sant.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_sant.setAttribute('disabled','')     
 
         doc_edu.addEventListener("click", function() {
@@ -78,7 +78,7 @@ function main(){
         });
     }
     if(index==1){
-        doc_edu.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_edu.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_edu.setAttribute('disabled', '')
 
         doc_sant.addEventListener("click", function() {
