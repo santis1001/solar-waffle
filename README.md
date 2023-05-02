@@ -13,7 +13,7 @@ This website allows users to navigate between the different planets of our solar
 - [x] https://github.com/santis1001/solar-waffle/issues/14
 - [x] https://github.com/santis1001/solar-waffle/issues/15
 - [ ] https://github.com/santis1001/solar-waffle/issues/16
-
+- [x] https://github.com/santis1001/solar-waffle/issues/17
 # User Story
 ```
 AS an astronomy enthusiast
