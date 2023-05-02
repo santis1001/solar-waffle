@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style_404.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style_tailwind.css">
     <title>Solar-Waffle</title>
     <link rel="icon" href="./assets/img/Cartoon Sun.I10.2k.png" type="image/png">
 
 </head>
 <body>
     <header>
-            <div class="header">
-                <a href="./index.html">                    
-                    <div class="title-container">
-                        <img class="icon-system" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
-                        <h1 class="planet-title">Solar-Waffle</h1>
-                    </div>
+        <div class="container relative min-w-full">
+            <nav class="nav-planets flex items-center">
+                <a class="flex items-center pl-20 pt-5" href="./">                    
+                    <img class="h-24 w-24" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                    <h1 class="text-6xl text-slate-50 font-semibold pr-20">Solar-Waffle</h1>
                 </a>
-                <nav class="nav-planets">
-                    <a href="./planet.html?planet=Mercury">Mercury</a>
-                    <a href="./planet.html?planet=Venus">Venus</a>
-                    <a href="./planet.html?planet=Earth">Earth</a>
-                    <a href="./planet.html?planet=Mars">Mars</a>
-                    <a href="./planet.html?planet=Jupiter">Jupiter</a>
-                    <a href="./planet.html?planet=Saturn">Saturn</a>
-                    <a href="./planet.html?planet=Uranus">Uranus</a>
-                    <a href="./planet.html?planet=Neptune">Neptune</a>
-                </nav>
-            </div>
+                <ul class="flex-1 text-right">
+                    <li class="list-none inline-block px-2 pt-10 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                    </li>
+                    <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="main">
-        <div class="container-404">
-            <h2 class="title-404" >Wow! how empty...</h2>
-            <h2 class="title-404" >3rror 404</h2>
-            <img src="assets/img/animation.gif">           
+        <img class="w-full xl:absolute top-5  scale-90 z-0" src="assets/img/animation.gif">           
+        <div class="h-full w-full mt-20 grid justify-items-center flex items-center">
+            <h2 class="text-6xl text-slate-50 font-semibold p-20 z-0" >Wow! how empty...</h2>
+            <h2 class="text-6xl text-slate-50 font-semibold p-20 z-0 " >3rror 404</h2>
         </div>
     </main>
 </body>
