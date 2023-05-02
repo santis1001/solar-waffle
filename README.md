@@ -2,18 +2,17 @@
 01 Project
 
 # Description
+This website allows users to navigate between the different planets of our solar system and view their information. The app offers user interaction and animation for the planets. On the main screen, the planet will rotate and change according to the last hovered element in the navigation bar. Once on the planet information screen, the 3D object of the planet will enable interaction with the user, allowing them to move it around with the mouse. Additionally, the website includes an About Us page, which displays each member of the team as a 3D image and provides our name, role, tasks within the project, and our Github link. 
 # Project Requirements
-* Use a CSS framework other than Bootstrap.
-
-* Be deployed to GitHub Pages.
-* Be interactive (i.e., accept and respond to user input).
-* Use at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources).
-* Does not use alerts, confirms, or prompts (use modals).
-* Use client-side storage to store persistent data.
-* Be responsive.
-* Have a polished UI.
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+- #8
+- #9
+- #10
+- #11
+- #12
+- #13
+- #14
+- #15
+- #16
 # User Story
 ```
 AS an astronomy enthusiast
@@ -21,12 +20,156 @@ I WANT to explore the solar system and learn about each planet's unique characte
 SO THAT I can deepen my understanding of our universe.
 ```
 # Code Snippets
-
 ## HTML
-### Structure
-### Model HTML
-## CSS
+### Header
+The header element is constant between every page.
+```html
+<header>
+    <div class="container relative min-w-full">
+        <nav class="nav-planets flex items-center">
+            <a class="flex items-center pl-20 pt-5" href="./">                    
+                <img class="h-24 w-24" src="assets/img/Cartoon Solar System.B04.2k.png" alt="">
+                <h1 class="text-6xl text-slate-50 font-semibold pr-20">Solar-Waffle</h1>
+            </a>
+            <ul class="flex-1 text-right">
+                <li class="list-none inline-block px-2 pt-10 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mercury" href="./planet.html?planet=Mercury">Mercury</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Venus" href="./planet.html?planet=Venus">Venus</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Earth" href="./planet.html?planet=Earth">Earth</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Mars" href="./planet.html?planet=Mars">Mars</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Jupiter" href="./planet.html?planet=Jupiter">Jupiter</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Saturn" href="./planet.html?planet=Saturn">Saturn</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Uranus" href="./planet.html?planet=Uranus">Uranus</a>
+                </li>
+                <li class="list-none inline-block px-2 z-10"><a class="text-xl text-slate-50 font-normal hover:font-medium px-2" id="Neptune" href="./planet.html?planet=Neptune">Neptune</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+```
+### Footer
+The footer element is constant between Index and Planets page.
+```html
+<footer class="absolute bottom-0 right-0 m-5">
+    <div>
+        <a id="aboutus" class="text-xl text-slate-50 font-normal hover:font-medium px-2" href="./aboutus.html?prs=santiago">About Us</a>
+    </div>
+</footer>
+```
+### Index
 
+```html
+<main class="main">
+    <div class="mt-10 z-0 flex flex-row-reverse h-full">
+        <img class="solar-system-img min-h-full xl:absolute top-5 left-0  scale-90 z-0" src="assets/img/solar system.gif">
+        <div id="modelcontent" class="modelcontent h-full w-3/6 grid justify-items-center flex items-center">
+            <model-viewer id="model" src="./assets/models/mars/mars.gltf" orientation="0 0 0">
+            </model-viewer> 
+        </div>
+    </div>
+</main>
+```
+### Planet
+```html
+<main class="main">
+    <div id="container" class="mt-10 z-0 flex flex-row h-full">
+        <div class="modelcontent h-full w-3/6 grid justify-items-center flex items-center">                
+            <model-viewer id="model" src="./assets/models/mars/mars.gltf" orientation="0 0 0"></model-viewer>             
+        </div>
+        <div id="infocont" class="h-full w-3/6 grid justify-items-center flex items-center">
+            <div id="infocard" class=" text-slate-50 w-3/6">
+                <h2 id="planet" class="text-6xl	p-20 w-fit	justify-self-center ">Earth</h2>
+                <div class="info-planets text-3xl	">
+                    <div class="flex flex-row"><p class="font-bold pr-2.5"> Name: </p><p id="name"></p></div>                    
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Mass: </p><p id="mass"></p><p>x10<p id="superscript" class="sup"></p>kg</p></div>                    
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Radius: </p><p id="radius"></p><p>km</p></div>      
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Period: </p><p id="period"></p><p>&nbsp;Earth days</p></div>                                  
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Semi Major Axis: </p><p id="semi_major_axis"></p><p>AU</p></div>                    
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Temperature: </p><p id="temperature"></p><p>°C</p></div>                    
+                    <div class="flex flex-row"><p class="font-bold pr-2.5">Distance: </p><p id="distance_light_year"></p><p>ly</p></div>                    
+                </div>
+                <div class="buttons p-20 flex justify-between">
+                    <button id="prev" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Prev Planet</button>
+                    <button id="next" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Next Planet</button>
+                </div>
+            </div>                
+        </div>
+    </div>
+</main>    
+```
+### About Us
+```html
+<main id="ourmain">
+    <div id="container" class="mt-10 z-0 flex flex-row h-full">
+        <div id="modelcontent" class="modelcontent h-full w-3/6 grid justify-items-center flex items-center">                
+            <model-viewer id="ourmodel" src="./assets/models/santiago.gltf" orientation="0 0 0"></model-viewer>             
+        </div>
+        <div id="credits" class="text-slate-50 h-2/3 w-3/6 grid justify-items-center flex items-center">
+            <h2 id="Name" class="text-6xl	px-20 w-fit	justify-self-center">Earth</h2>
+            <div id="info-credit" class="info-credit px-20 text-3xl">
+
+            </div>                
+            <div class="title-cont" >
+                <a id="git" class="git" href="">
+                    <img class="w-16 invert" src="./assets/img/git.png" alt="">
+                </a>
+            </div>
+            <div class="buttons px-20 w-3/6 flex justify-between">
+                <button id="Santiago" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Santiago</button>
+                <button id="Eduardo" class="w-4/12 outline outline-offset-4 outline-pink-500 bg-rose-400">Eduardo</button>
+            </div>
+        </div>
+        
+    </div>
+</main>
+```
+The About page will use the person object's description to populate the model with as much data as possible. 
+```html
+<div class="flex flex-row"><p class="font-bold">Content</p></div>                             
+```
+## CSS
+The same Stylesheet is use through all pages.
+### STyle
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --dark-purple-color: #070724;
+    --light-purple-color: #8854C0;
+    --light-color: #fff;
+    --dark-color: #000;
+    --grey-color: #f2f2f2;
+    --transition: all 300ms ease-in-out;
+}
+body {
+    background-color: var(--dark-purple-color);
+    overflow: hidden;
+    background-image: url(./Stars.png);
+}
+main{
+    height: 1000px;
+}
+* {
+    font-family: Poppins;
+}
+.modelcontent model-viewer{
+    height: 50%;
+    width: 50%;
+}
+#ourmodel{
+    height: 100%;
+    width: 100%;
+}
+#ourmain{
+    height: 1300px;
+}
+```
 
 ## Javascript
 ## Index script
@@ -178,7 +321,7 @@ function main(){
     }
     
     if(index==0){
-        doc_previous.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_previous.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_previous.setAttribute('disabled','')
         doc_next.addEventListener("click", function() {
             window.location.href = planets[index+1].url;
@@ -188,7 +331,7 @@ function main(){
         doc_previous.addEventListener("click", function() {
             window.location.href = planets[index-1].url;
         });
-        doc_next.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_next.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_next.setAttribute('disabled', '')
     }else{
         doc_previous.addEventListener("click", function() {
@@ -322,9 +465,9 @@ function main(){
         console.log(thisinfo);
         doc_title.textContent = ''+thisinfo.name;
         doc_modelCont.innerHTML = '';
-        doc_modelCont.setAttribute('class','modelcontent');        
+        doc_modelCont.setAttribute('class','modelcontent h-full w-3/6 grid justify-items-center flex items-center');
         doc_model = document.createElement('model-viewer');
-        doc_model.setAttribute('id','model')
+        doc_model.setAttribute('id','ourmodel')
         doc_model.setAttribute('src',''+thisinfo.obj);        
         doc_modelCont.appendChild(doc_model);
         d_name.textContent = ''+thisinfo.name;
@@ -332,9 +475,9 @@ function main(){
         d_git.setAttribute('href',thisinfo.git);
         doc_info.innerHTML = '';        
         var createDiv = document.createElement('div');
-        createDiv.setAttribute('class','line');        
+        createDiv.setAttribute('class','flex flex-row');
         var roll = document.createElement('p');
-        roll.setAttribute('class','bold');
+        roll.setAttribute('class','font-bold');
         roll.textContent = thisinfo.roll;        
         createDiv.appendChild(roll);
         doc_info.appendChild(createDiv);
@@ -342,7 +485,7 @@ function main(){
         console.log(thisinfo.description);
         for(var i=0;i<desc.length;i++){
             var createP = document.createElement('p');
-            createP.setAttribute('class','line');
+            createP.setAttribute('class','flex flex-row');
             createP.textContent = desc[i];            
             doc_info.appendChild(createP);
         };
@@ -351,14 +494,14 @@ function main(){
     }
     
     if(index==0){
-        doc_sant.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_sant.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_sant.setAttribute('disabled','')     
         doc_edu.addEventListener("click", function() {
             window.location.href = "./aboutus.html?prs=eduardo";
         });
     }
     if(index==1){
-        doc_edu.setAttribute('style','background-color: var(--light-blue-color);');
+        doc_edu.setAttribute('class','w-4/12 outline outline-offset-4 outline-gray-500 bg-purple-600');
         doc_edu.setAttribute('disabled', '')
         doc_sant.addEventListener("click", function() {
             window.location.href = "./aboutus.html?prs=santiago";
@@ -367,8 +510,11 @@ function main(){
 }
 ```
 # Screenshots
-
+![Application Indec Picture](./assets/screenshots/IndexSS.JPG)
+![Application Planet Picture](./assets/screenshots/PlanetsSS.JPG)
+![Application About Us Picture](./assets/screenshots/AboutUs.JPG)
+![Application Error 404 Picture](./assets/screenshots/404.JPG)
 # Video
-
+![Website Video](./assets/screenshots/WebAppVideo.gif)
 # Pages Link
 Website Link [Github Pages Link](https://santis1001.github.io/solar-waffle/)
