@@ -18,13 +18,13 @@
         "short":"eduardo",
         "roll": "Frontend Developer, Graphic Designer",
         "description":[
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Developed the frontend of the web app.",
+            "Created a well-organized semantic HTML page.",
+            " Styled with CSS the overall look of the page",
+            "Model the 3d elements that appear on the page"
+            
         ],
-        "obj":"./assets/models/.gltf",
-        "git":"https://github.com/"
+        "obj":"./assets/models/eduardo.gltf",
+        "git":"https://github.com/EduardoPinedaH"
     }
 ]
