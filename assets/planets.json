@@ -16,7 +16,11 @@
         "url":"./planet.html?planet=Mars"
     },
     {   "name":"Jupiter",
+<<<<<<< HEAD
         "obj":"./assets/models/jupiter/saturn.gltf",        
+=======
+        "obj":"./assets/models/jupiter/jupiter.gltf",        
+>>>>>>> parent of 4a34b80 (Main commit)
         "url":"./planet.html?planet=Jupiter"
     },
     {   "name":"Saturn",
