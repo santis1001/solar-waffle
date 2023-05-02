@@ -16,7 +16,7 @@
         "url":"./planet.html?planet=Mars"
     },
     {   "name":"Jupiter",
-        "obj":"./assets/models/jupiter/jupiter.gltf",        
+        "obj":"./assets/models/jupiter/saturn.gltf",        
         "url":"./planet.html?planet=Jupiter"
     },
     {   "name":"Saturn",
