@@ -32,3 +32,11 @@ main{
 #ourmain{
     height: 1300px;
 }
+@media screen and (max-width:  1920px) {
+    main{
+        height: 600px;
+    }
+    #ourmain{
+        height: 1000px;
+    }
+}
