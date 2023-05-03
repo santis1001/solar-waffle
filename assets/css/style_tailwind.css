@@ -39,4 +39,7 @@ main{
     #ourmain{
         height: 1000px;
     }
+    .min-h-full{
+        height: 80%;
+    }
 }
